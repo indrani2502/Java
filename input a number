@@ -1,0 +1,16 @@
+/* This is a very simple program to learn how to input a number in Java*/
+//Copy paste the code to your bluej compiler to start your first code.
+
+import java.io.*; //include the header file
+class lets_learn_to_input_a_number //class name
+{
+public static void main(String args[])throws IOException //To catch the unexpected errors in java
+{
+BufferedReader x=new BufferedReader(new InputStreamReader(System.in));
+System.out.print('\u000C'); //To clear the screen
+System.out.println("Enter n"); //Output line 
+int n= Integer.parseInt(x.readLine()); //Read an input
+System.out.print("The number you have entered is: ");
+System.out.println(n);
+}
+}
