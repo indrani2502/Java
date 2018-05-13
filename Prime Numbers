@@ -1,0 +1,22 @@
+//This is the program to print prime numbers between 1 to 100.
+
+import java.io.*;
+class prime_numbers
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader x=new BufferedReader(new InputStreamReader(System.in));
+System.out.print('\u000C');
+for(int i=2; i<=100; i++)     //loop from 2 to 100 as the boundary limit is 100
+{
+int c=i,c1=0;
+for(int j=1; j<=c; j++)       //To check if the number of divisors is 2
+{
+if(c%j==0)
+c1++;
+}
+if(c1==2)
+System.out.println("Prime number: "+c);
+}
+}
+}
